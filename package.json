@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Projeto de teste",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamito/test.git"
+  },
+  "author": "Jorge Gamito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamito/test/issues"
+  },
+  "homepage": "https://github.com/gamito/test#readme"
+}
