@@ -34,7 +34,7 @@ var src = {
   images: src + 'images/*.{png,jpg,jpeg,gif,svg}',
   fonts: src + 'fonts/*',
   public: [
-    src + '*.php',
+    src + '*.html',
     src + 'crossdomain.xml',
     src + 'humans.txt',
     src + 'manifest.appcache',
@@ -276,10 +276,13 @@ gulp.task('styles', function () {
 //  ==================================================
 //  Browsersync & gulp server
 
-gulp.task('connect', ['phpserver'], function () {
+gulp.task('connect', function () {
   browsersync.init(null, {
-    //browser: ["chrome.exe", "firefox.exe"],
-    proxy: '127.0.0.1:8889',
+    browser: ['chrome.exe'],
+    //proxy: '127.0.0.1:8889',
+    server: {
+      baseDir: './dist'
+    },
     port: 8080,
     open: 'external',
     reloadOnRestart: true,
