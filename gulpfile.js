@@ -41,11 +41,11 @@ var src = {
     src + 'robots.txt',
     src + 'favicon.ico',
     src + '.htaccess',
-    src + 'json/*.*'
+    src + 'json/*.*',
   ],
   scripts: src + 'scripts/*.js',
   scripts_vendor: src + 'scripts/libs/**/*.js',
-  styles: src + 'styles/**/*.sass',
+  styles: src + 'styles/**/*.{sass,scss,css}',
   sprites: src + 'images/sprites/*.svg',
 };
 
