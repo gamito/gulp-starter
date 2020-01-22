@@ -309,6 +309,21 @@ gulp.task('watch', ['connect'], function() {
 
 
 //  ============================================================
+//  Deploy Netlify
+
+gulp.task('build', [
+  'images',
+  'fonts',
+  'public',
+  'scripts',
+  'scripts_vendor',
+  'styles',
+  'sprites'
+]);
+
+
+
+//  ============================================================
 //  Default task
 
 gulp.task('default', [
